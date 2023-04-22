@@ -1,0 +1,31 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+
+// @media
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px)
+// container
+$container-max-widths: (xs: 100%, sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px)
+
+// ограничение на кол строчек текста
+@mixin ellipsisMultilineText($lines)
+  display: -webkit-box
+  -webkit-line-clamp: $lines
+  -webkit-box-orient: vertical
+  overflow: hidden
+
+@mixin arrowRotationSetDefault($deg, $transition)
+  transform: rotate($deg)
+  transition: transform $transition ease
+
+@mixin arrowRotationSetRotate($deg)
+  transform: rotate($deg)
+
+@mixin fontWSH($weight, $size, $height)
+  font-weight: $weight
+  font-size: $size
+  line-height: $height
+
+@mixin bgColor($color)
+  background-color: $color
+
+@import "bootstrap/scss/mixins"
