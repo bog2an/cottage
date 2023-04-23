@@ -1,6 +1,62 @@
 @import "bootstrap/scss/functions"
 @import "bootstrap/scss/variables"
 
+$brown-1: #CDA274
+$brown-2: #2B2728
+$gray-1: #9A99A6
+$black-1: #3B3A3D
+$white-1: #f5f5f5
+$questrial: 'Questrial', sans-serif
+
+$link-color: $brown-1
+$link-hover-color: $white
+$navbar-light-hover-color: $brown-1
+$navbar-light-color: $white
+$nav-link-color: $black
+$nav-link-hover-color: $black
+$headings-font-family: $questrial
+
+// slider
+.swiper-button-next, .swiper-button-prev
+  color: $white !important
+  bottom: 50% !important
+
+.swiper-button-next
+  right: 10% !important
+
+.swiper-button-prev
+  left: 10% !important
+
+// buttons
+.btn-1
+  z-index: 1
+  display: inline-block
+  font-size: 1.125rem
+  padding: 1rem 2.43rem
+  font-family: $questrial
+  font-weight: 400
+  position: relative
+  border-radius: 10px
+  transition: .5s
+  background: $brown-2
+  border: 1px solid $brown-1
+  color: white
+
+  &:hover:before
+    width: 100%
+
+  &:before
+    border-radius: 8px
+    position: absolute
+    content: ""
+    z-index: -1
+    left: 0
+    top: 0
+    background-color: $brown-1
+    height: 100%
+    width: 31%
+    transition: .5s
+
 // @media
 $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px)
 // container

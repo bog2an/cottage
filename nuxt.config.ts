@@ -2,6 +2,10 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  alias: {
+    assets: '/<rootDir>/assets'
+  },
+
   app: {
     rootId: 'cottage',
     rootTag: 'div',
@@ -43,6 +47,7 @@ export default defineNuxtConfig({
     // Simple usage
     '@nuxtjs/eslint-module',
     // With options
-    ['@nuxtjs/eslint-module', { /* module options */ }]
+    ['@nuxtjs/eslint-module', { /* module options */ }],
+    'nuxt-swiper'
   ]
 })

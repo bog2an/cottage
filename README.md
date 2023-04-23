@@ -5,6 +5,7 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 ### Сайты:
 
 [linear-gradient](https://cssgradient.io/)
+
 [Генерация текста](https://ru.lipsum.com/feed)
 
 [Star Rating System](https://codepen.io/meowwwls/pen/BzaWZg)
